@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 const authRoutes = require('./routes/auth.route');
 
+const orderRoutes = require('./routes/order.route');
+
 // Middleware cho phép đọc JSON từ Body Request
 app.use(express.json());
 
@@ -38,3 +40,5 @@ app.listen(PORT, () => {
 });
 
 app.use('/api/auth', authRoutes);
+
+app.use('/api/orders', orderRoutes);
