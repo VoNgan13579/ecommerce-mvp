@@ -1,0 +1,9 @@
+# Các biến môi trường và cấu hình bảo mật
+.env
+
+# Thư mục chứa thư viện node (rất nặng, không đẩy lên git)
+node_modules/
+
+# File hệ thống và log
+.DS_Store
+npm-debug.log*
